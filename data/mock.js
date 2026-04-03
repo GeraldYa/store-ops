@@ -1,4 +1,4 @@
-// Mock data for Best Buy-style retail store management
+// Mock data for retail store management
 
 const STORES = [
   { id: 'S001', name: 'St. Catharines', address: '420 Vansickle Rd', region: 'Niagara' },
