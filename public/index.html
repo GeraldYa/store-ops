@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoreOps — Retail Operations Intelligence</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <div class="logo">
+        <span class="logo-icon">📊</span>
+        <span class="logo-text">StoreOps</span>
+      </div>
+      <div class="store-selector">
+        <select id="storeSelect">
+          <option value="">Loading stores...</option>
+        </select>
+      </div>
+      <span class="nav-date" id="navDate"></span>
+    </div>
+    <div class="nav-right">
+      <button class="nav-btn" id="langToggle" title="Language">EN</button>
+      <button class="nav-btn" id="themeToggle" title="Toggle theme">🌙</button>
+      <span class="demo-badge">DEMO</span>
+    </div>
+  </nav>
+
+  <!-- Disclaimer -->
+  <div class="disclaimer" id="disclaimer">
+    <span id="disclaimerText">⚠️ All data shown is fictional and for demonstration purposes only.</span>
+    <button class="disclaimer-close" id="disclaimerClose">&times;</button>
+  </div>
+
+  <!-- Tab Bar -->
+  <div class="tab-bar">
+    <button class="tab active" data-tab="pnl" id="tabPnl">P&amp;L Dashboard</button>
+    <button class="tab" data-tab="inventory" id="tabInventory">Inventory</button>
+    <button class="tab" data-tab="workforce" id="tabWorkforce">Workforce</button>
+  </div>
+
+  <!-- Tab Content -->
+  <main class="content">
+    <!-- P&L Dashboard -->
+    <section class="tab-content active" id="pnlContent">
+      <div class="stats-row" id="pnlStats"></div>
+      <div class="two-col">
+        <div class="card" id="weeklyTrendCard">
+          <h3 id="weeklyTrendTitle">Weekly Revenue Trend</h3>
+          <div class="bar-chart" id="weeklyChart"></div>
+        </div>
+        <div class="side-cards">
+          <div class="card" id="conversionCard"></div>
+          <div class="card" id="footTrafficCard"></div>
+        </div>
+      </div>
+      <div class="card" id="comparisonCard">
+        <h3 id="comparisonTitle">Multi-Store Comparison</h3>
+        <div class="table-wrap">
+          <table id="comparisonTable">
+            <thead id="comparisonHead"></thead>
+            <tbody id="comparisonBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inventory -->
+    <section class="tab-content" id="inventoryContent">
+      <div class="stats-row" id="invStats"></div>
+      <div class="card" id="alertsCard">
+        <h3 id="alertsTitle">Inventory Alerts</h3>
+        <div id="alertsList"></div>
+      </div>
+      <div class="card">
+        <h3 id="invTableTitle">Inventory Items</h3>
+        <div class="table-wrap">
+          <table id="inventoryTable">
+            <thead id="invHead"></thead>
+            <tbody id="invBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workforce -->
+    <section class="tab-content" id="workforceContent">
+      <div class="stats-row" id="wfStats"></div>
+      <div class="card" id="scheduleCard">
+        <h3 id="scheduleTitle">Weekly Schedule</h3>
+        <div class="table-wrap">
+          <table id="scheduleTable">
+            <thead id="schedHead"></thead>
+            <tbody id="schedBody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card" id="coverageCard">
+        <h3 id="coverageTitle">Daily Coverage</h3>
+        <div class="coverage-grid" id="coverageGrid"></div>
+      </div>
+      <div class="card" id="employeeCard">
+        <h3 id="employeeTitle">Employee Roster</h3>
+        <div class="table-wrap">
+          <table id="employeeTable">
+            <thead id="empHead"></thead>
+            <tbody id="empBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span>StoreOps — Retail Operations Intelligence Demo | Built by Baojun Yang</span>
+  </footer>
+
+  <!-- Loading overlay -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="spinner"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
