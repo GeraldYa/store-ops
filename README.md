@@ -4,6 +4,8 @@ A multi-store analytics dashboard built for retail operations teams. StoreOps co
 
 > **Demo project** — all data is fictional. Built to demonstrate full-stack dashboard architecture with realistic retail domain modeling.
 
+> **Disclaimer:** All store names, employee names, financial figures, inventory data, scheduling information, and operational metrics shown are entirely fictional and created for demonstration purposes only. No real company data, employee records, customer information, or internal systems were referenced. Any resemblance to actual businesses or individuals is coincidental.
+
 ![StoreOps Dashboard](docs/screenshot.png)
 
 ---
